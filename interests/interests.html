@@ -6,59 +6,74 @@
     <title>My Interests</title>
     <style>
         body {
-            background-color: #f1e6c7; /* لون خلفية فينتج فاتح */
-            color: #524a36; /* لون النص بني داكن */
-            font-family: 'Georgia', serif; /* خط كلاسيكي */
+            font-family: 'Arial', sans-serif;
+            background-color: #262123;
+            color: #d9c8a5;
+            margin: 0;
+            padding: 0;
         }
-
-        h1, p {
-            color: #524a36; /* لون النص */
+        h1 {
+            text-align: center;
+            color: #c3b299;
         }
-
         nav ul {
             list-style-type: none;
             padding: 0;
+            text-align: center;
+            margin: 60px 0;
+            background-color: #453f3c;
         }
-
         nav ul li {
             display: inline;
-            margin-right: 15px;
+            margin-right: 20px;
         }
-
         nav ul li a {
-            color: #816d54; /* لون فينتج ناعم */
             text-decoration: none;
-            font-weight: bold;
-            padding: 5px 10px;
-            background-color: #d1b28c; /* لون خلفية فاتح */
+            color: #f0e4d7;
+            padding: 10px 20px;
             border-radius: 5px;
+            background-color: #6e6259;
         }
-
         nav ul li a:hover {
-            color: #a08563; /* لون عند التمرير */
+            background-color: #877e72;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            border: 5px solid #6e6259;
+            border-radius: 10px;
+        }
+        p {
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        .move-down{
+            position: relative;
+            top: 20px;
+        }
+        .highlight-link {
+            color: #8a8a8a; /* اختر اللون الذي تريده */
         }
 
-        img {
-            border: 5px solid #a08563; /* إطار فينتج */
-            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-            width: 400px;
-            height: 400px;
+        .highlight-link:hover {
+            color: #2e4877; /* لون الرابط عند المرور فوقه */
         }
     </style>
 </head>
 <body>
     <h1>My Passion for Web Development</h1>
-    <p><img src="learn (1).jpg" alt="Web Development Passion"></p>
+    <p><img src="learn (1).jpg" alt="Learning Web Development"></p>
     <p>I have a growing passion for learning about web development, and my interests in programming are still in their early stages. I created this website to tell my story and showcase what I have learned so far. It's a reflection of my journey and the skills I am continuously developing as I explore more about the world of web design and programming.</p>
 
-    <p>This is a link to my current experimental site, which I am still developing:</p>
-    <p><a href="https://almasri034.github.io/wissenschaft/" target="_blank">My experimental website</a></p>
+    <p class="move-down">This is my current experimental website, which I'm still developing: <a href="https://almasri034.github.io/wissenschaft/" target="_blank" class="highlight-link">Click here</a></p>
     
     <nav>
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="../where/where.html">Where I Live</a></li>
-            <li><a href="interests.html">My Interests</a></li>
+            <li><a href="../interests/interests.html">My Interests</a></li>
             <li><a href="../hoppy/hoppy.html">My Hobbies</a></li>
         </ul>
     </nav>

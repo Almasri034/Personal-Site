@@ -5,68 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Hobbies</title>
     <style>
-        /* نستخدم flexbox لجعل الصور بجانب بعضها */
-        .image-gallery {
-            display: flex;
-            justify-content: space-between; /* توزيع الصور بالتساوي */
-            gap: 15px; /* مسافة بين الصور */
-        }
-        
-        .image-gallery img {
-            width: 30%; /* عرض الصور كنسبة مئوية لتكون بجانب بعضها */
-            height: auto; /* يجعل الصورة تتناسب مع النسبة الأصلية */
-            border: 5px solid #d4a373; /* إطار بلون فينتج */
-            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* إضافة ظل خفيف */
-        }
-
-        /* تنسيق خلفية الصفحة */
         body {
-            background-color: #f2e8cf; /* لون خلفية فينتج دافئ */
-            color: #5a3d2b; /* لون نص دافئ (بني داكن) */
-            font-family: 'Georgia', serif; /* خط بأناقة فينتج */
-        }
-
-        /* تنسيق النصوص */
-        h1, h2, p {
-            color: #5a3d2b; /* لون النص الأساسي */
-        }
-
-        /* تنسيق الروابط */
-        a {
-            color: #a05a2c; /* لون فينتج للروابط */
-            text-decoration: none; /* إزالة التسطير */
-        }
-
-        a:hover {
-            color: #d4a373; /* لون عند تمرير الفأرة */
-        }
-
-        /* تنسيق قائمة التنقل */
-        nav ul {
-            list-style-type: none; /* إزالة التعداد */
+            font-family: 'Arial', sans-serif;
+            background-color: #2b2b2b; /* خلفية داكنة مع لمسة فينتج */
+            color: #d9c8a5; /* لون النص الفاتح */
+            margin: 0;
             padding: 0;
         }
-
+        h1 {
+            text-align: center;
+            color: #c3b299; /* لون فينتج داكن */
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            margin: 20px 0;
+            background-color: #453f3c;
+        }
         nav ul li {
             display: inline;
-            margin-right: 15px; /* مسافة بين الروابط */
+            margin-right: 20px;
         }
-
         nav ul li a {
-            font-weight: bold;
-            padding: 5px 10px;
-            background-color: #e1c699; /* خلفية فينتج للروابط */
-            border-radius: 5px; /* زوايا مدورة */
+            text-decoration: none;
+            color: #f0e4d7; /* لون الروابط */
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #6e6259; /* لون داكن للروابط */
+        }
+        nav ul li a:hover {
+            background-color: #877e72; /* لون داكن عند التمرير */
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+        }
+        .image-container img {
+            margin-right: 20px;
+            border: 5px solid #202020; /* حدود الصور بلون فينتج */
+            border-radius: 20px;
+        }
+        p {
+            text-align: center;
+            font-size: 18px;
+            line-height: 9.2;
         }
     </style>
 </head>
 <body>
     <h1>My Hobbies</h1>
-
-    <div class="image-gallery">
-        <img src="hobby2.jpg" alt="sports">
-        <img src="hobby1.jpg" alt="drawing">
-        <img src="hobby3.jpg" alt="reading">
+    <div class="image-container">
+        <img src="hobby2.jpg" alt="javascript" width="300" height="300">
+        <img src="hobby1.jpg" alt="javascript" width="300" height="300">
+        <img src="hobby3.jpg" alt="javascript" width="300" height="300">
     </div>
 
     <p>My hobbies include sports, drawing, and reading. Each of these activities has its own time and atmosphere, allowing me to fully enjoy each one in its unique way and in the moments that suit it best.</p>
@@ -76,7 +69,7 @@
             <li><a href="../index.html">Home</a></li>
             <li><a href="../where/where.html">Where I Live</a></li>
             <li><a href="../interests/interests.html">My Interests</a></li>
-            <li><a href="hoppy.html">My Hobbies</a></li>
+            <li><a href="../hoppy/hoppy.html">My Hobbies</a></li>
         </ul>
     </nav>
 </body>

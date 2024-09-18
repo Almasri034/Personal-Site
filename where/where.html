@@ -3,57 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Where I Live</title>
+    <title>Where I live</title>
     <style>
         body {
-            background-color: #e4dcc3; /* لون خلفية فينتج دافئ */
-            color: #3b3327; /* لون نص بني مائل للأخضر الداكن */
-            font-family: 'Georgia', serif;
+            font-family: 'Arial', sans-serif;
+            background-color: #182922;
+            color: #d9c8a5;
+            margin: 0;
+            padding: 0;
         }
-
-        h1, h2, p {
-            color: #3b3327;
+        h1, h2 {
+            text-align: center;
+            color: #c3b299;
         }
-
         nav ul {
             list-style-type: none;
             padding: 0;
+            text-align: center;
+            margin: 90px 0;
+            background-color: #453f3c;
         }
-
         nav ul li {
             display: inline;
-            margin-right: 15px;
+            margin-right: 20px;
         }
-
         nav ul li a {
-            color: #776b59; /* لون فينتج داكن */
             text-decoration: none;
-            font-weight: bold;
-            padding: 5px 10px;
-            background-color: #c9ba99; /* لون خلفية فاتح */
+            color: #f0e4d7;
+            padding: 10px 20px;
             border-radius: 5px;
+            background-color: #6e6259;
         }
-
         nav ul li a:hover {
-            color: #998a6a; /* لون عند التمرير */
+            background-color: #877e72;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            border: 5px solid #6e6259;
+            border-radius: 10px;
+        }
+        p {
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 20px;
         }
 
-        img {
-            border: 5px solid #998a6a; /* إطار فينتج */
-            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-        }
+      .move-down {
+        position: relative;
+        top: 40px;
+      }
+
     </style>
 </head>
 <body>
-    <h1>Where I Live</h1>
+    <h1>Where I live</h1>
     <p><img src="Wien.jpg" alt="Vienna" width="400" height="400"></p>
     <h2>Austria Vienna</h2>
-    <p>I live in Vienna, a city known for its rich cultural heritage and stunning architecture. With its blend of historic landmarks and vibrant modern life, Vienna offers a perfect balance of tradition and innovation.</p>
-    
+   <p class="move-down">I live in Vienna, a city known for its rich cultural heritage and stunning architecture. With its blend of historic landmarks and vibrant modern life, Vienna offers a perfect balance of tradition and innovation.</p>
+
     <nav>
         <ul>
             <li><a href="../index.html">Home</a></li>
-            <li><a href="where.html">Where I Live</a></li>
+            <li><a href="../where/where.html">Where I Live</a></li>
             <li><a href="../interests/interests.html">My Interests</a></li>
             <li><a href="../hoppy/hoppy.html">My Hobbies</a></li>
         </ul>
