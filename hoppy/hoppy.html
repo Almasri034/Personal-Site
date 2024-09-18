@@ -3,9 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Hoppy</title>
+    <title>My Hobbies</title>
+    <style>
+        /* نستخدم flexbox لجعل الصور بجانب بعضها */
+        .image-gallery {
+            display: flex;
+            justify-content: space-between; /* توزيع الصور بالتساوي */
+            gap: 15px; /* مسافة بين الصور */
+        }
+        
+        .image-gallery img {
+            width: 30%; /* عرض الصور كنسبة مئوية لتكون بجانب بعضها */
+            height: auto; /* يجعل الصورة تتناسب مع النسبة الأصلية */
+            border: 5px solid #d4a373; /* إطار بلون فينتج */
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* إضافة ظل خفيف */
+        }
+
+        /* تنسيق خلفية الصفحة */
+        body {
+            background-color: #f2e8cf; /* لون خلفية فينتج دافئ */
+            color: #5a3d2b; /* لون نص دافئ (بني داكن) */
+            font-family: 'Georgia', serif; /* خط بأناقة فينتج */
+        }
+
+        /* تنسيق النصوص */
+        h1, h2, p {
+            color: #5a3d2b; /* لون النص الأساسي */
+        }
+
+        /* تنسيق الروابط */
+        a {
+            color: #a05a2c; /* لون فينتج للروابط */
+            text-decoration: none; /* إزالة التسطير */
+        }
+
+        a:hover {
+            color: #d4a373; /* لون عند تمرير الفأرة */
+        }
+
+        /* تنسيق قائمة التنقل */
+        nav ul {
+            list-style-type: none; /* إزالة التعداد */
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px; /* مسافة بين الروابط */
+        }
+
+        nav ul li a {
+            font-weight: bold;
+            padding: 5px 10px;
+            background-color: #e1c699; /* خلفية فينتج للروابط */
+            border-radius: 5px; /* زوايا مدورة */
+        }
+    </style>
 </head>
 <body>
+    <h1>My Hobbies</h1>
+
+    <div class="image-gallery">
+        <img src="hobby2.jpg" alt="sports">
+        <img src="hobby1.jpg" alt="drawing">
+        <img src="hobby3.jpg" alt="reading">
+    </div>
+
+    <p>My hobbies include sports, drawing, and reading. Each of these activities has its own time and atmosphere, allowing me to fully enjoy each one in its unique way and in the moments that suit it best.</p>
     
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../where/where.html">Where I Live</a></li>
+            <li><a href="hoppy.html">My Hobbies</a></li>
+            <li><a href="../interests/interests.html">My Interests</a></li>
+        </ul>
+    </nav>
 </body>
 </html>

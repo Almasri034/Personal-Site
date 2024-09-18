@@ -4,21 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Almasri Portfolio</title>
+    <style>
+        body {
+            background-color: #f7e1d7; /* لون خلفية فينتج ناعم */
+            color: #4a3c31; /* لون النص بني داكن */
+            font-family: 'Georgia', serif; /* خط كلاسيكي */
+        }
+
+        h1, h2, p {
+            color: #4a3c31; /* لون النص */
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: #8c5a45; /* لون فينتج ناعم */
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            background-color: #e3c9b1; /* لون خلفية فاتح */
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            color: #c98a63; /* لون عند تمرير الفأرة */
+        }
+
+        img {
+            border: 5px solid #c98a63; /* إطار بلون فينتج */
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
 <body>
     <h1>Almasri Personal Site</h1>
-    <p><img src="images/my-photo.jpg" alt="javascript" width="400" height="400"></p>
+    <p><img src="images/my-photo.jpg" alt="my photo" width="400" height="400"></p>
     <h2>About Me</h2>
-        <p>My name is Ahmad Almasri, and I studied Biology at the Faculty of Science at Damascus University. Unfortunately, I couldn’t complete my degree due to the circumstances my country has been through, but my passion for learning remains strong. I have a wide range of interests, and one of my biggest passions is web development. I’m continuously working on improving my skills and learning more about building websites and exploring the world of programming.</p>
+    <p>My name is Ahmad Almasri, and I studied Biology at the Faculty of Science at Damascus University. Unfortunately, I couldn’t complete my degree due to the circumstances my country has been through, but my passion for learning remains strong. I have a wide range of interests, and one of my biggest passions is web development. I’m continuously working on improving my skills and learning more about building websites and exploring the world of programming.</p>
     
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="where/where.html">Where  I Live</a></li>
-                <li><a href="hoppy/hoppy.html">My Hoppy</a></li>
-                <li><a href="interests/interests.html">My Interests</a></li>
-            
-            </ul>
-        </nav>
-      
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="where/where.html">Where I Live</a></li>
+            <li><a href="hoppy/hoppy.html">My Hobbies</a></li>
+            <li><a href="interests/interests.html">My Interests</a></li>
+        </ul>
+    </nav>
+</body>
 </html>
