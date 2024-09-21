@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Where I live</title>
+    <title>Where I Live</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -15,6 +15,7 @@
         h1, h2 {
             text-align: center;
             color: #c3b299;
+            margin: 20px 0; /* إضافة مسافة من الأعلى والأسفل */
         }
         nav ul {
             list-style-type: none;
@@ -24,7 +25,7 @@
             background-color: #453f3c;
         }
         nav ul li {
-            display: inline;
+            display: inline-block; /* استخدام inline-block للتجاوب */
             margin-right: 20px;
         }
         nav ul li a {
@@ -42,31 +43,40 @@
             margin: 20px auto;
             border: 5px solid #6e6259;
             border-radius: 10px;
-            
+            max-width: 100%; /* لجعل الصورة متجاوبة */
+            height: auto;    /* للحفاظ على نسبة العرض إلى الارتفاع */
         }
-
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 24px;
         p {
             text-align: center;
             font-size: 18px;
             line-height: 1.6;
             margin: 20px;
         }
+        .move-down {
+            position: relative;
+            top: 40px;
+        }
 
-      .move-down {
-        position: relative;
-        top: 40px;
-      }
-
+        /* تحسينات الهاتف */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 24px; /* تقليل حجم الخط */
+            }
+            nav ul li {
+                display: block; /* جعل العناصر في عمود */
+                margin: 10px 0; /* مسافة بين العناصر */
+            }
+            p {
+                font-size: 16px; /* تقليل حجم الخط */
+            }
+        }
     </style>
 </head>
 <body>
-    <h1>Where I live</h1>
+    <h1>Where I Live</h1>
     <p><img src="Wien.jpg" alt="Vienna" width="400" height="400"></p>
     <h2>Austria Vienna</h2>
-   <p class="move-down">I live in Vienna, a city known for its rich cultural heritage and stunning architecture. With its blend of historic landmarks and vibrant modern life, Vienna offers a perfect balance of tradition and innovation.</p>
+    <p class="move-down">I live in Vienna, a city known for its rich cultural heritage and stunning architecture. With its blend of historic landmarks and vibrant modern life, Vienna offers a perfect balance of tradition and innovation.</p>
 
     <nav>
         <ul>

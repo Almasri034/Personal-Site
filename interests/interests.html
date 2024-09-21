@@ -15,6 +15,7 @@
         h1 {
             text-align: center;
             color: #c3b299;
+            margin: 20px 0; /* إضافة مسافة من الأعلى والأسفل */
         }
         nav ul {
             list-style-type: none;
@@ -24,7 +25,7 @@
             background-color: #453f3c;
         }
         nav ul li {
-            display: inline;
+            display: inline-block; /* استخدام inline-block للتجاوب */
             margin-right: 20px;
         }
         nav ul li a {
@@ -42,28 +43,40 @@
             margin: 20px auto;
             border: 5px solid #6e6259;
             border-radius: 10px;
+            max-width: 100%; /* لجعل الصورة متجاوبة */
+            height: auto;    /* للحفاظ على نسبة العرض إلى الارتفاع */
         }
-
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 24px;
         p {
             text-align: center;
             font-size: 18px;
             line-height: 1.6;
             margin: 20px;
         }
-        .move-down{
+        .move-down {
             position: relative;
             top: 20px;
         }
         .highlight-link {
             color: #8a8a8a; /* اختر اللون الذي تريده */
         }
-
         .highlight-link:hover {
             color: #2e4877; /* لون الرابط عند المرور فوقه */
         }
+
+        /* تحسينات الهاتف */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 24px; /* تقليل حجم الخط */
+            }
+            nav ul li {
+                display: block; /* جعل العناصر في عمود */
+                margin: 10px 0; /* مسافة بين العناصر */
+            }
+            p {
+                font-size: 16px; /* تقليل حجم الخط */
+            }
+        }
+
     </style>
 </head>
 <body>

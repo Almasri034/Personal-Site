@@ -15,6 +15,7 @@
         h1 {
             text-align: center;
             color: #c3b299; /* لون فينتج داكن */
+            margin: 20px 0; /* إضافة مسافة من الأعلى والأسفل */
         }
         nav ul {
             list-style-type: none;
@@ -24,7 +25,7 @@
             background-color: #453f3c;
         }
         nav ul li {
-            display: inline;
+            display: inline-block; /* استخدام inline-block للتجاوب */
             margin-right: 20px;
         }
         nav ul li a {
@@ -40,20 +41,35 @@
         .image-container {
             display: flex;
             justify-content: center;
-            margin-top: 100px;
+            flex-wrap: wrap; /* للسماح للصورة باللف حول الصف */
+            margin-top: 50px; /* تقليل المسافة العلوية */
         }
         .image-container img {
-            margin-right: 20px;
+            margin: 10px; /* إضافة مسافة متساوية بين الصور */
             border: 5px solid #202020; /* حدود الصور بلون فينتج */
             border-radius: 20px;
+            max-width: 100%; /* لجعل الصور متجاوبة */
+            height: auto;    /* للحفاظ على نسبة العرض إلى الارتفاع */
         }
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 24px;
         p {
             text-align: center;
             font-size: 18px;
-            line-height: 9.2;
+            line-height: 1.6; /* جعل ارتفاع السطر أكثر اتساقًا */
+            margin: 20px; /* إضافة مسافة حول النص */
+        }
+
+        /* تحسينات الهاتف */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 24px; /* تقليل حجم الخط */
+            }
+            nav ul li {
+                display: block; /* جعل العناصر في عمود */
+                margin: 10px 0; /* مسافة بين العناصر */
+            }
+            p {
+                font-size: 16px; /* تقليل حجم الخط */
+            }
         }
 
     </style>
@@ -61,9 +77,9 @@
 <body>
     <h1>My Hobbies</h1>
     <div class="image-container">
-        <img src="hobby2.jpg" alt="javascript" width="300" height="300">
-        <img src="hobby1.jpg" alt="javascript" width="300" height="300">
-        <img src="hobby3.jpg" alt="javascript" width="300" height="300">
+        <img src="hobby2.jpg" alt="Hobby 2" width="300" height="300">
+        <img src="hobby1.jpg" alt="Hobby 1" width="300" height="300">
+        <img src="hobby3.jpg" alt="Hobby 3" width="300" height="300">
     </div>
 
     <p>My hobbies include sports, drawing, and reading. Each of these activities has its own time and atmosphere, allowing me to fully enjoy each one in its unique way and in the moments that suit it best.</p>
