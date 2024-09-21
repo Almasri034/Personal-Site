@@ -20,22 +20,23 @@
         h1 {
             text-align: center;
             color: #c3b299;
+            margin: 20px 0; /* إضافة مسافة من الأعلى والأسفل */
         }
         nav ul {
             list-style-type: none;
             padding: 0;
             text-align: center;
-            margin: 45px 0;
+            margin: 20px 0;
             background-color: #453f3c;
         }
         nav ul li {
-            display: inline;
-            margin-right: 20px;
+            display: inline-block; /* استخدم inline-block للتجاوب */
+            margin: 0 10px; /* تقليل المسافة بين العناصر */
         }
         nav ul li a {
             text-decoration: none;
             color: #f0e4d7;
-            padding: 10px 20px;
+            padding: 10px 15px; /* تقليل الحشو */
             border-radius: 5px;
             background-color: #6e6259;
         }
@@ -59,6 +60,21 @@
         h2 {
             text-align: left; /* محاذاة إلى اليسار */
             margin-left: 20px; /* إضافة مسافة من اليسار */
+        }
+
+        /* تحسينات الهاتف */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 24px; /* تقليل حجم الخط */
+            }
+            p {
+                font-size: 16px; /* تقليل حجم الخط */
+                margin: 15px; /* تقليل المسافات */
+            }
+            nav ul li {
+                display: block; /* جعل العناصر في عمود */
+                margin: 10px 0; /* مسافة بين العناصر */
+            }
         }
         
     </style>
