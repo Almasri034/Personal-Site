@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Almasri Portfolio</title>
     <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
             font-family: 'Arial', sans-serif;
             background-color: #1f2341;
@@ -42,6 +47,8 @@
             margin: 20px auto;
             border: 5px solid #6e6259;
             border-radius: 10px;
+            max-width: 100%; /* لجعل الصورة متجاوبة */
+            height: auto;    /* للحفاظ على نسبة العرض إلى الارتفاع */
         }
         p {
             text-align: center;
@@ -49,17 +56,17 @@
             line-height: 1.6;
             margin: 25px;
         }
-        .move-left {
-        position: relative;
-         left: 900px;
+        h2 {
+            text-align: left; /* محاذاة إلى اليسار */
+            margin-left: 20px; /* إضافة مسافة من اليسار */
         }
         
     </style>
 </head>
 <body>
     <h1>Almasri Personal Site</h1>
-    <p><img src="images/890.jpg" alt="javascript" width="890" height="401"></p>
-    <h2 class="move-left">About Me</h2>
+    <p><img src="images/myphoto22.jpg" alt="javascript" width="600" height="270"></p>
+    <h2>About Me</h2>
     <p>My name is Ahmad Almasri, and I studied Biology at the Faculty of Science at Damascus University. Unfortunately, I couldn’t complete my degree due to the circumstances my country has been through, but my passion for learning remains strong. I have a wide range of interests, and one of my biggest passions is web development. I’m continuously working on improving my skills and learning more about building websites and exploring the world of programming.</p>
     
     <nav>
